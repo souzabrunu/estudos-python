@@ -1,0 +1,5 @@
+p = int(input('Qual valor do produto?'))
+pcd = p * 0.15
+t = p - pcd 
+print('O valor do desconto é {} \n ' \
+'e o valor do produto final é {}' .format(pcd,t))
