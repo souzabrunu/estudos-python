@@ -1,13 +1,12 @@
+from time import sleep
 
-# utilizando função built-in range
-for numero in range (0, 71, 7):
- print(numero, end='')
 
-# utilizan um iterável
-texto = input('Informe un texto:')
-vogais = 'AEIOU'
+def contagem_regressiva():
+    for c in range(10, 0, -1):
+        print(c)
+        sleep(1)   # pausa 1 segundo
 
-for letra in texto:
-    if letra.upper() in vogais:
-       print(letra, end='')
+    print("FOGOOOOS 🎆")
 
+
+contagem_regressiva()

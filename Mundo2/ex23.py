@@ -1,19 +1,20 @@
-def medir_peso_pessoas():
+peso = float(input('Digite seu peso: '))
+altura = float(input('Digite sua altura: '))
+imc = peso / (altura ** 2)
+print('O seu imc é de {:.1f}'.format(imc))
 
-    peso = float(input('Digite seu peso: '))
-    maior = peso
-    menor = peso
+if imc < 18.5:
+    print ('Você esta ABAIXO do peso normal')
+elif 18.5 <= imc < 25:
+    print('Você está no peso normal')
+elif 25 <= imc < 30:
+    print('Você está com SOBREPESO!')
+elif 30 <= imc < 40:
+    print('Você está com OBESIDADE!')
+else:
+    print('Você está com OBESIDADE MÓRBIDA!')
 
-    for p in range(2, 6):
-        peso = float(input(f'digite o peso da pessoa {p}: '))
-
-        if peso > maior:
-            maior = peso
-        if peso < menor:
-            menor = peso
-
-    print('Maior peso:', maior)
-    print('Menor peso:', menor)
+ 
 
 
-medir_peso_pessoas()
+

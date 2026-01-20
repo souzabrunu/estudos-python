@@ -1,16 +1,10 @@
-curso = 'Python'
+def numeros_pares():
+    pares = []
 
-print(curso.center(10, '#'))
+    for p in range(0, 50, 2):
+        pares.append(p)
 
-print('.'.join(curso))  # Mais comun de usar
+    print('os pares sao:', pares)
 
-nome = '  BruNo  '
 
-print(nome.lstrip())  # Remove os espacos da esquerda.
-print(nome.rstrip())  # Remove espaços da direita.
-print(nome.strip().upper())  # Decide deixar strip em todas
-print(nome.strip().lower())  # para mostrar que pode ser feito juntando tb.
-print(nome.strip().title())
-
-menu = 'Python'
-print(menu.center(10, '#'))
+numeros_pares()

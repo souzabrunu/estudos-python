@@ -1,17 +1,14 @@
-def calcular_soma_media():
-    soma = 0
-    contador = 0
-
-    for i in range(4):
-        numero = int(input("Digite um numero: "))
-        soma = soma + numero
-        contador = contador + 1
-
-    media = float(soma / contador)
-
-    print("Soma:", soma)
-    print("Quantidade:", contador)
-    print("Média:", media)
-
-
-calcular_soma_media()
+num = int(input('Escolha um numero inteiro: '))
+print('''Escolha uma das bases para conversão: 
+[1] conversão para BINÁRIO
+[2] conversão para OCTAL
+[3] conversão para HEXADECIMAL''')
+opcao = int(input('Sua opção: '))
+if opcao == 1:
+    print('{}  convertido para BINÁRIO é igual a {}'.format(num, bin(num)[2:]))
+elif opcao == 2:
+    print('{} convertido para OCTAL é igual a {}'.format(num, oct(num)[2:]))
+elif opcao == 3:
+    print('{} conveertidoo para HEXADECIMAL é a {}'.format(num, hex(num)[2:]))
+else:
+    print('Opcão iinvalida, tente novamente')

@@ -1,23 +1,22 @@
+from datetime import date
+atual = date.today().year
+nasc = int(input('Ano de nascimento: '))
+sexo = str(input('Se você é homem digite H, se for mulher digite M: '))
+idade = atual - nasc
+print('Quem nasceu em {} tem {} anos em {}.'.format(nasc, idade, atual))
 
-def analisar_numeros():
-    soma = 0
-    contador = 0
-    maior = None
-
-    quantos = int(input('Quantos números você quer digitar? '))
-
-    for i in range(quantos):
-        numero = int(input('Digite um numero: '))
-
-        soma = soma + numero
-        contador = contador + 1
-
-        if maior is None or numero > maior:
-            maior = numero
-
-    print('soma:', soma)
-    print('contador:', contador)
-    print('maior:', maior)
+if idade == 18:
+    print('Você tem que se alistar IMEDIATAMENTE!')
+elif idade  < 18:
+    saldo = 18 - idade
+    print('Ainda faltam {} para o alistamento'.format(saldo))
+    ano = atual + saldo
+    print('Seu alistamento será em {}'.format(ano))
+elif idade > 18:
+    saldo = idade - 18
+    print('Você deveria ter se alistado há {} anos atrás!'.format(saldo))
+    ano = atual - saldo
+    print('Seu alistamento foi em {}'.format(ano))
+    
 
 
-analisar_numeros()

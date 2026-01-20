@@ -1,7 +1,10 @@
+def somatorio():
+    soma = 0
 
-saldo = 2000
-saque = 3000
+    for s in range(0, 4):
+        numero = int(input('Digite um numero: '))
+        soma += numero
+    print(f'A soma dos numeros foi {soma}')
 
 
-status = 'Sucesso' if saldo >= saque else 'Falha!'
-print(f'{status} ao realizar o saque!')
+somatorio()

@@ -1,12 +1,19 @@
-def exibir_mensagem(nome):
-    print(f' Seja bem vindo {nome}')
+def medir_peso_pessoas():
+
+    peso = float(input('Digite seu peso: '))
+    maior = peso
+    menor = peso
+
+    for p in range(2, 6):
+        peso = float(input(f'digite o peso da pessoa {p}: '))
+
+        if peso > maior:
+            maior = peso
+        if peso < menor:
+            menor = peso
+
+    print('Maior peso:', maior)
+    print('Menor peso:', menor)
 
 
-exibir_mensagem('Bruno')
-
-
-def salvar_carro(marca, modelo, ano, placa, /, *, chassi, combustível):
-    print(f'Veículo cadastrado com sucesso! {marca, modelo, ano, placa, chassi, combustível}')
-
-
-salvar_carro('Jeep', 'Renegade', 2018, 'KYO6C48', chassi='0094447575554', combustível='flex')
+medir_peso_pessoas()
