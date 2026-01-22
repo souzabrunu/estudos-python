@@ -1,0 +1,6 @@
+data = int(input('Digite sua data de nascimento: '))
+ano = 2026
+idade = (ano - data)
+print()
+
+print(f' Você tem {idade} anos.')
