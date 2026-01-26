@@ -1,9 +1,10 @@
-def tabuada():
+def pares():
+    n = int(input('Digite um numero: '))
 
-    n = int(input('Digite um número: '))
+    if n % 2 == 0:
+        print('Par')
+    else:
+        print('Não é par')
 
-    for t in range(1, 11):
-        print(f' {t} X {n} = {n*t}')
 
-
-tabuada()
+pares()

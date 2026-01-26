@@ -9,7 +9,6 @@ for _ in range(n):
     pais, toneladas = linha.split(",")
     pais = pais.strip()
     toneladas = float(toneladas.strip())
-    
     if pais in exportacoes:
       exportacoes[pais] += toneladas
     else:
